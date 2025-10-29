@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Gatos</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Gestión de Gatos 🐈</h1>
+
+    <hr>
+    <section id="crear-gato">
+        <h2>Crear nuevo Gato</h2>
+        <form id="form-crear">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <br><br>
+            <label for="patas">Número de patas:</label>
+            <input type="number" name="patas" id="patas">
+
+            <button type="submit">Crear Gato</button>
+        </form>
+    </section>
+
+    <br><br>
+
+    <hr>
+
+    <section id="buscar-gatos">
+        <h2>Buscar Gatos</h2>
+        
+        <label for="buscar-nombre">Buscar por nombre:</label>
+        <input type="text" id="buscar-nombre" placeholder="Nombre del gato">
+        <button id="btn-buscar-nombre">Buscar por Nombre</button>
+
+        <br><br>
+
+        <label for="buscar-id">Buscar por ID:</label>
+        <input type="number" id="buscar-id" placeholder="ID del gato">
+        <button id="btn-buscar-id">Buscar por ID</button>
+    </section>
+
+    <br><br>
+
+    <hr>
+
+    <section id="lista-gatos">
+        <h2>Lista de Gatos</h2>
+        <button id="btn-cargar-gatos">Cargar todos</button>
+        <ul id="gatos-list"></ul>
+    </section>
+
+    <br><br>
+    <hr>
+</body>
+</html>
